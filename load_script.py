@@ -32,7 +32,7 @@ report_date DATE
 
 # Loads data from CSV file into table
 cur.execute("""LOAD DATA INFILE '"""+path+"""'
-INTO TABLE ZikaChart
+INTO TABLE zikachart
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
@@ -42,7 +42,7 @@ IGNORE 1 ROWS
 , time_period_type, value, unit);""")
 
 # Cursor selects the first 5 rows from the ZikaChart
-cur.execute("SELECT * FROM ZikaChart LIMIT 5;")
+cur.execute("SELECT * FROM zikachart LIMIT 5;")
 
 print 'First 5 rows:'
 # Prints the rows selected by the cursor
@@ -51,5 +51,7 @@ for c in cur:
 
 print "\nSuccessfully loaded CSV into table of database"
 
-cur.close()
+db.commit()
+
+
 
