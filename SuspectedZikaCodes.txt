@@ -1,0 +1,10 @@
+Argentina=AR0002,AR0004,AR0005,AR0006:province
+Brazil=BR0011
+Colombia=CO0003,CO0004:municipality
+Dominican_Republic=DO0005
+Ecuador=EC0001
+El_Salvador=SV0010
+Guatemala=GT0007
+Nicaragua=NI0005
+United_States=US0001,US0002:state
+United_States_Virgin_Islands=VI0001,VI0003,VI0004
